@@ -60,9 +60,9 @@ Submit.MouseButton1Click:Connect(function()
         Frame:Destroy()
         ScreenGui:Destroy()
         print("✅ Correct key entered! Loading AubixHub...")
-        
-        -- ✅ Load your main script here
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/TherealScripter/AubixHub/main/V3Main.lua"))()
+
+        -- 🔥 Load AubixHub main script AFTER key is entered
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TherealScripter/AubixHub/main/MainV3.lua"))()
     else
         TextBox.Text = ""
         TextBox.PlaceholderText = "❌ Wrong Key - Try Again"
